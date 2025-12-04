@@ -1,0 +1,13 @@
+<html>
+/class-arcade
+   index.html            (homepage with all games)
+   style.css             (main styles)
+   theme.js              (switch themes)
+   /games
+       game1.html        (page with embedded game 1)
+       game2.html        (etc.)
+   /profiles
+       maker1.html       (profile of student 1)
+       maker2.html
+   /assets
+       images, icons, backgrounds 

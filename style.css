@@ -1,0 +1,181 @@
+:root {
+  --bg: #4A0E67;
+  --header: #34064A;
+  --card-bg: #ffffff;
+  --card-text: #000000;
+  --btn-bg: #ffffff;
+  --btn-text: #000000;
+  --text: #000000;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: all 0.4s ease;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: var(--header);
+  color: var(--btn-text);
+  border-bottom: 4px solid #C59BFF;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.header-buttons button, .header-buttons .play-button {
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 2px solid black;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin-left: 10px;
+}
+
+.header-buttons button:hover,
+.header-buttons .play-button:hover {
+  background: linear-gradient(45deg, #C59BFF, #EBD6FF);
+  color: black;
+  transform: scale(1.05);
+}
+
+/* Game grid */
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 30px;
+}
+
+/* Game card */
+.game-card {
+  background-color: var(--card-bg);
+  color: var(--card-text);
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+  background: linear-gradient(145deg, #F5E8FF, #EBD6FF);
+}
+
+.game-card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+/* Play button */
+.play-button {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 12px;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid black;
+  transition: all 0.3s ease;
+}
+
+.play-button:hover {
+  background: linear-gradient(45deg, #C59BFF, #EBD6FF);
+  color: black;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 25px;
+  background-color: var(--header);
+  border-top: 4px solid #C59BFF;
+}
+
+/* Light theme */
+body.light-theme {
+  --bg: #ffffff;
+  --header: #EBD6FF;
+  --card-bg: #F5E8FF;
+  --card-text: #000000;
+  --btn-bg: #C59BFF;
+  --btn-text: #000000;
+  --text: #000000;
+}
+
+/* Profile page */
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  gap: 40px;
+}
+
+.profile-info {
+  max-width: 800px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 25px;
+  background: linear-gradient(145deg, #F5E8FF, #EBD6FF);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.profile-info img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.play-area {
+  text-align: center;
+}
+
+.play-area h2 {
+  margin-bottom: 15px;
+}
+
+.small-profile {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: rgba(255,255,255,0.15);
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.small-profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #C59BFF;
+}
+
+.profile-text h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.profile-text p {
+  margin: 3px 0;
+}
